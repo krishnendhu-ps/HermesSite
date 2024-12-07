@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:6rem;
+    background-color:blanchedalmond;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items:center;
+
+}
+
+.menu a {
+    text-decoration:none;
+    padding-left: 10px;
+    margin:30px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+.logo img{
+    
+        height:50px;
+        display:flex;
+        margin-top: 20px;
+        margin-left:180px;
+}
+.sidemenu ul li{
+    
+list-style-type: none;
+}
+.sidemenu ul{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    padding-right: 10px;
+    grid-gap: 100px;
+    
+
+}
+.sidemenu ul li a{
+    color:black;
+    text-decoration: none;
+
+    
+}
+
+ .image img{
+    position:relative;
+   
+
+}  
+.man{
+display:flex;
+width:100%;
+height:700px;
+position: absolute;
+object-fit:cover;
+left:0;
+}
+/* text animation  */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.title {
+    animation: fadeSlideIn 5s ease forwards;
+}
+
+
+.subtitle {
+    animation: fadeSlideIn 5s ease forwards;
+
+}
+
+
+.overlaytext {
+    position: absolute;
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none; 
+}
+
+.overlaytext h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.overlaytext p {
+    text-align: center;
+}
+
+/* product grid 1 */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.product-item {
+    background-color:white;
+    padding: 20px;
+    border-radius: 1px;
+    text-align: center;
+    
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1px;
+}
+.product-item img:hover{
+    transform: scale(1.1);
+}
+
+.product-item h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.flying-girl {
+    text-align: center;
+    width:100%;
+    position: relative;
+}
+
+.content {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.image-container img{
+    position:relative;
+   
+
+}  
+.girl{
+display:flex;
+width:100%;
+height:800px;
+max-width: 1200px;
+    margin: 50px auto;
+position: absolute;
+object-fit:cover;
+left:0;
+}
+/* product grid 2 */
+.product-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.product-item2{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1px;
+   
+}
+
+.product-item2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+.product-item2 img:hover{
+    transform: scale(1.1);   
+}
+
+.product-item2 h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.product-item2 p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+/* both flying */
+.flying {
+    text-align: center;
+    width:100%;
+    position: relative;
+}
+
+.content2 {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.content2 h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+
+.content2 p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.image-cont img{
+    position:relative;
+   
+
+}  
+.both{
+display:flex;
+width:100%;
+height:800px;
+max-width: 1200px;
+    margin: 50px auto;
+position: absolute;
+object-fit:cover;
+left:0;
+}
+/* product grid 3 */
+.product-grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.product-item3{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1px;
+
+}
+
+.product-item3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+.product-item3 img:hover{
+    transform: scale(1.1);   
+}
+
+.product-item3 h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.product-item3 p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+/* footer */
+.footer {
+    background-color: #f4f0eb;
+    color: #2a2a2a;
+    padding: 40px 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.footer-links li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-button {
+    background-color: transparent;
+    border: 1px solid #2a2a2a;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
